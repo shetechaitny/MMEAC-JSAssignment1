@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Assigment_Q9</h1>
+    <h3>Const Example</h3> <hr>
+    <p id="demo"></p>
+    </div>
+<script>
+const PI = 3.14159;
+document.getElementById('demo').innerHTML=("Initial value of PI is : " + PI );
+try {
+    PI = 3.14;
+} catch (error) {
+    document.getElementById('demo1').innerHTML=("Error:", error.message);
+}
+document.getElementById('demo2').innerHTML=("Value of PI after reassignment attempt:", PI);
+</script>
+</body>
+</html>

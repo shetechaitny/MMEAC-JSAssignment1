@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div style="text-align: center;"> 
+        <h1>Assigment_Q14</h1> <hr>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+</div>
+    <script>
+        function introduce(name, age) {
+            return `Hello, My name is ${name} and I am ${age} years old.`;
+        }
+        
+        // Test the function with different values
+        document.getElementById('demo').innerHTML=(introduce("Chaitnya", 22));  // Hello, my name is Alice and I am 30 years old.
+        document.getElementById('demo1').innerHTML=(introduce("Kaustubh", 21));    // Hello, my name is Bob and I am 25 years old.
+        document.getElementById('demo2').innerHTML=(introduce("Ganesh", 22)); // Hello, my name is Charlie and I am 22 years old.
+        document.getElementById('demo3').innerHTML=(introduce("Nayan", 10));  // Hello, my name is Diana and I am 40 years old.
+        
+    </script>
+</body>
+</html>

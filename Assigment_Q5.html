@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Assigment_Q5</h1>
+    <h3>Syntax rules</h3>
+    <p id="demo"></p>
+    </div>
+    <script>
+     let userName = "Chaitnya"
+     const userAge = 22;
+
+// 2. Function Definition
+function checkVotingEligibility(age) {
+    // This function checks if the user is eligible to vote.
+    if (age >= 18) {
+        return "I am eligible for vote.";
+    } else {
+        return "I do not eligible to vote.";
+    }
+}
+
+// 3. Control Structure: If-Else
+let eligibilityMessage;
+if (userAge < 0) {
+    eligibilityMessage = "Age cannot be negative.";
+} else {
+    eligibilityMessage = checkVotingEligibility(userAge);
+}
+
+// 4. Output the result
+document.getElementById("demo").innerHTML=(eligibilityMessage);
+
+</script>
+</body>
+</html>

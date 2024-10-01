@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assigment_Q13</h1>
+    <h3>Data type Example</h3> <hr>
+    <script>
+        function getDataType(value) {
+            // Check for array specifically, as typeof returns "object" for arrays
+            if (Array.isArray(value)) {
+                return 'array';
+            }
+            // Use typeof for other types
+            return typeof value;
+        }
+        
+        // Example values to test
+        const testValues = [
+            42,                      // Number
+            "Hello, world!",        // String
+            true,                   // Boolean
+            null,                   // Null
+            undefined,              // Undefined
+            { name: "Alice" },     // Object
+            [1, 2, 3],             // Array
+            function() {},         // Function
+            Symbol('sym'),         // Symbol
+        ];
+        
+        // Log the data types for each value
+        testValues.forEach(value => {
+            console.log(`Value: ${JSON.stringify(value)} - Data Type: ${getDataType(value)}`);
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assigment_Q8</h1>
+    <h3>Difference between var and let.</h3>
+    <script>
+        function scopeDemo() {
+            // Declare a variable using var
+            var varVariable = "I am a var variable!";
+            
+            // Declare a variable using let
+            let letVariable = "I am a let variable!";
+            
+            // Log both variables inside the function
+            console.log("Inside function:");
+            console.log("varVariable:", varVariable); // Accessible
+            console.log("letVariable:", letVariable); // Accessible
+        
+            // Create a block to demonstrate scope
+            if (true) {
+                var varVariable = "I am re-declared inside a block!";
+                let letVariable = "I am block-scoped let variable!";
+                
+                // Log both variables inside the block
+                console.log("Inside block:");
+                console.log("varVariable:", varVariable); // Block-scoped due to re-declaration
+                console.log("letVariable:", letVariable); // Block-scoped and different variable
+            }
+        
+            // Log both variables again outside the block
+            console.log("After block:");
+            console.log("varVariable:", varVariable); // Re-declared variable value
+            console.log("letVariable:", letVariable); // Original let variable value
+        }
+        
+        // Call the function
+        scopeDemo();
+        
+    </script>
+</body>
+</html>

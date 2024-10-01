@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction of JavaScript</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        h1{
+            text-align: center;
+        }
+        #jsIntro {
+            padding: 20px;
+            background-color: #f4f4f4;
+            transition: background-color 0.5s ease;
+        }
+        
+        button {
+           margin-left: 500px;
+        }
+        
+    </style>
+</head>
+<body onload="changeBackgroundColor()">
+ <h2 style="text-align: center;">Assignment_Q1</h2>
+    <div id="jsIntro">
+        <h1>JavaScript Introduction</h1>
+        <p>
+        JavaScript is a versatile, high-level programming language primarily used in web development to create interactive and 
+        dynamic websites. While HTML provides the structure of web pages and CSS handles the design and layout, JavaScript brings
+        life to a website by allowing developers to create features that respond to user interactions, like dropdown menus, pop-up
+        notifications, sliders, and form validation. JavaScript works in tandem with HTML and CSS, making it a key part of the triad
+        that builds modern web applications.
+        </p>
+        <button onclick="changeBackgroundColor()">click me</button>
+    </div>
+    <script>
+    function changeBackgroundColor() {
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    document.getElementById('jsIntro').style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
